@@ -1,54 +1,49 @@
-# React + TypeScript + Vite
+# Fetch Dog Directory
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the **Fetch Dog Directory**, a web application that allows users to browse and search for adoptable dogs using filters such as breed, location (ZIP code), and radius. The project was built as part of the Fetch Frontend Engineer Take-Home Exercise.
 
-Currently, two official plugins are available:
+## 🚀 Features
+- **User Authentication**: Users log in with their name and email.
+- **Dog Search**:
+  - Filter by breed
+  - Filter by ZIP code with adjustable search radius
+  - Sort results alphabetically by breed (ascending/descending)
+  - Paginated results for easy browsing
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tech Stack
+- **Frontend**: React (Vite) + TypeScript
+- **UI Framework**: Material UI (MUI) + Tailwind CSS
+- **State Management**: React Context API
+- **Data Fetching**: Fetch API with authentication cookies
+- **Hosting**: Firebase
 
-## Expanding the ESLint configuration
+## 📦 Installation & Setup
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/your-username/fetch-challenge.git
+   cd fetch-challenge
+   ```
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+2. **Install Dependencies**
+   ```bash
+   npm install
+   ```
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+3. **Run the Development Server**
+   ```bash
+   npm run dev
+   ```
+   The app will be available at `http://localhost:5173/`
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+4. **Build for Production**
+   ```bash
+   npm run build
+   ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🖥️ Usage
+- **Login**: Enter your name and email to authenticate.
+- **Search for Dogs**:
+  - Use the breed filter to search for specific breeds.
+  - Enter a ZIP code and select a radius to find dogs nearby.
+  - Sort results alphabetically.
+- **Pagination**: Click "Next" and "Prev" to navigate through results.
