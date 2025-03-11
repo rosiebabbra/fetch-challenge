@@ -20,7 +20,7 @@ Welcome to the **Fetch Dog Directory**, a web application that allows users to b
 ## 📦 Installation & Setup
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/fetch-challenge.git
+   git clone https://github.com/rosiebabbra/fetch-challenge.git
    cd fetch-challenge
    ```
 
