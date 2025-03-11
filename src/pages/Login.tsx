@@ -56,7 +56,7 @@ const Login: React.FC = () => {
                     <button
                         type="submit"
                         disabled={loading}
-                        className="bg-orange-500 text-white font-semibold p-2 rounded-lg hover:bg-orange-600 transition duration-200 disabled:bg-gray-300 mb-6"
+                        className="bg-orange-500 text-white font-semibold p-2 rounded-lg hover:bg-orange-600 transition duration-200 disabled:bg-gray-300 mb-6 hover:cursor-pointer"
                     >
                         {loading ? <CircularProgress size={20} color="inherit" /> : "Sign In"}
                     </button>

@@ -1,1 +1,5 @@
-@import "tailwindcss";
+@import "tailwindcss/utilities";
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
